@@ -120,8 +120,8 @@ The framework continuously learns and improves:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/ethics-by-design-framework.git
-cd ethics-by-design-framework
+git clone https://github.com/sonikaarora/Ethics-by-Design.git
+cd Ethics-by-Design
 
 # Install dependencies
 pip install -r requirements.txt
@@ -316,9 +316,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - **Documentation**: [Full documentation](docs/)
-- **Issues**: [GitHub Issues](https://github.com/your-org/ethics-by-design-framework/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-org/ethics-by-design-framework/discussions)
-- **Email**: ethics-framework@your-org.com
+- **Issues**: [GitHub Issues](https://github.com/sonikaarora/Ethics-by-Design/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/sonikaarora/Ethics-by-Design/discussions)
 
 ---
 
