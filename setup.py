@@ -50,11 +50,6 @@ setup(
             "sphinx-rtd-theme>=0.5",
         ],
     },
-    entry_points={
-        "console_scripts": [
-            "ethics-framework=src.ethics_framework.cli:main",
-        ],
-    },
     include_package_data=True,
     zip_safe=False,
 )
