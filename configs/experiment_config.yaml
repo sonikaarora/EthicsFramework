@@ -1,0 +1,237 @@
+# Ethics-by-Design Framework - Experiment Configuration
+# Comprehensive configuration for all experimental scenarios
+
+# Global Experiment Settings
+global:
+  framework_version: "1.0.0"
+  random_seed: 42
+  output_directory: "results/"
+  log_level: "INFO"
+  parallel_processing: true
+  max_workers: 4
+
+# Performance Evaluation Configuration
+performance_evaluation:
+  baseline_requests: 3000
+  ethics_requests: 3000
+  warmup_requests: 100
+  measurement_iterations: 5
+  statistical_confidence: 0.95
+  percentiles: [50, 95, 99]
+  
+  # Baseline ML simulation
+  baseline_simulation:
+    matrix_size: 80
+    computation_complexity: "medium"
+    cache_enabled: true
+    
+  # Ethics-aware simulation
+  ethics_simulation:
+    constraint_matrix_size: 15
+    constraint_count: 5
+    validation_depth: "comprehensive"
+
+# Individual Constraint Testing
+constraint_testing:
+  decisions_per_constraint: 3000
+  constraint_types:
+    - fairness
+    - privacy
+    - wellbeing
+    - transparency
+    - consent
+  
+  # Constraint-specific parameters
+  fairness:
+    protected_attributes: ["demographic_group", "age_group", "gender"]
+    fairness_threshold: 0.8
+    parity_tolerance: 0.1
+    
+  privacy:
+    epsilon: 1.0
+    delta: 1e-5
+    sensitivity: 1.0
+    privacy_budget: 10.0
+    
+  wellbeing:
+    max_engagement_threshold: 120.0  # minutes
+    min_break_time: 15.0  # minutes
+    daily_limit: 180.0  # minutes
+    
+  transparency:
+    min_explanation_coverage: 0.7
+    required_stakeholders: ["user", "developer", "auditor"]
+    
+  consent:
+    consent_expiry_days: 365
+    required_consent_types: ["data_processing", "algorithmic_decision"]
+
+# Scenario-Based Analysis
+scenario_analysis:
+  decisions_per_scenario: 3000
+  scenarios:
+    social_media:
+      constraint_profile: "permissive_wellbeing"
+      primary_constraints: ["wellbeing", "privacy"]
+      approval_threshold: 0.6
+      
+    hiring:
+      constraint_profile: "strict_fairness"
+      primary_constraints: ["fairness", "transparency"]
+      approval_threshold: 0.4
+      
+    content_recommendation:
+      constraint_profile: "balanced"
+      primary_constraints: ["fairness", "privacy", "wellbeing"]
+      approval_threshold: 0.45
+
+# Constraint Composition Study
+constraint_composition:
+  composition_sets:
+    minimal:
+      constraint_count: 1
+      expected_satisfaction: 0.88
+      expected_overhead: 1.25
+      
+    standard:
+      constraint_count: 2
+      expected_satisfaction: 0.38
+      expected_overhead: 1.90
+      
+    comprehensive:
+      constraint_count: 5
+      expected_satisfaction: 0.30
+      expected_overhead: 2.68
+  
+  decisions_per_composition: 300
+  conflict_detection: true
+  interaction_analysis: true
+
+# Scalability Analysis
+scalability_analysis:
+  decision_counts: [100, 500, 1000, 2000, 3000]
+  target_throughput: 200000  # decisions per second
+  max_acceptable_degradation: 0.1  # 10%
+  memory_monitoring: true
+  cpu_profiling: true
+  
+  # Performance targets
+  performance_targets:
+    min_throughput: 180000
+    max_latency_p95: 1.0  # milliseconds
+    max_memory_usage: 500  # MB
+
+# Adaptive Learning Experiment
+adaptive_learning:
+  learning_iterations: 10
+  decisions_per_iteration: 500
+  feedback_mechanisms:
+    - "policy_adjustment"
+    - "threshold_optimization"
+    - "constraint_weighting"
+  
+  learning_parameters:
+    learning_rate: 0.01
+    convergence_threshold: 0.001
+    max_iterations: 100
+
+# Real-World Scenarios
+real_world_scenarios:
+  scenario_duration_hours: 24
+  decision_rate_per_hour: 1000
+  realistic_data_patterns: true
+  
+  scenarios:
+    e_commerce_recommendation:
+      user_base_size: 10000
+      product_catalog_size: 100000
+      seasonal_patterns: true
+      
+    social_media_feed:
+      user_base_size: 50000
+      content_pool_size: 1000000
+      engagement_patterns: "realistic"
+      
+    job_matching_platform:
+      candidate_pool_size: 5000
+      job_posting_count: 1000
+      bias_mitigation_required: true
+
+# Statistical Analysis Configuration
+statistical_analysis:
+  confidence_level: 0.95
+  effect_size_threshold: 0.1
+  multiple_comparison_correction: "bonferroni"
+  outlier_detection: true
+  normality_testing: true
+  
+  # Hypothesis testing
+  hypothesis_tests:
+    - "t_test"
+    - "mann_whitney_u"
+    - "chi_square"
+    - "anova"
+
+# Visualization Configuration
+visualization:
+  output_formats: ["png", "pdf", "svg"]
+  figure_dpi: 300
+  color_palette: "viridis"
+  style_theme: "whitegrid"
+  
+  # Plot specifications
+  plots:
+    latency_distribution:
+      bins: 50
+      alpha: 0.7
+      
+    constraint_heatmap:
+      cmap: "RdYlBu_r"
+      annot: true
+      
+    convergence_plot:
+      line_width: 2
+      marker_size: 6
+
+# Data Export Configuration
+data_export:
+  formats: ["json", "csv", "pickle"]
+  compression: "gzip"
+  include_metadata: true
+  timestamp_format: "%Y%m%d_%H%M%S"
+  
+  # Export specifications
+  exports:
+    raw_results:
+      include_individual_decisions: false
+      aggregate_statistics: true
+      
+    performance_metrics:
+      percentile_data: true
+      time_series: true
+      
+    constraint_analysis:
+      violation_details: true
+      satisfaction_rates: true
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_rotation: true
+  max_file_size: "10MB"
+  backup_count: 5
+  
+  # Logger specifications
+  loggers:
+    experiment_runner:
+      level: "DEBUG"
+      handlers: ["file", "console"]
+      
+    performance_profiler:
+      level: "INFO"
+      handlers: ["file"]
+      
+    constraint_validator:
+      level: "WARNING"
+      handlers: ["file", "console"] 
