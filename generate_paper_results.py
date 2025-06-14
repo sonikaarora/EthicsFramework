@@ -26,8 +26,8 @@ from statistics import mean, stdev
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from ethics_framework.core.system_orchestrator import EthicsFrameworkOrchestrator
-from ethics_framework.core.interfaces import Decision
+from src.ethics_framework.core.system_orchestrator import EthicsFrameworkOrchestrator
+from src.ethics_framework.core.interfaces import Decision
 
 # Set random seeds for reproducibility
 random.seed(42)

@@ -15,11 +15,11 @@ from pathlib import Path
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import matplotlib.pyplot as plt
 
-from ethics_framework.core.constraints import create_constraint
-from ethics_framework.simulation.workload_generator import (
+from src.ethics_framework.core.constraints import create_constraint
+from src.ethics_framework.simulation.workload_generator import (
     WorkloadGenerator, WorkloadConfig, UserDistribution, ContentDistribution
 )
-from ethics_framework.visualization.latency_plots import plot_scalability_analysis
+from src.ethics_framework.visualization.latency_plots import plot_scalability_analysis
 from experiments.baseline_comparison import BaselineMLSystem, EthicsAwareMLSystem
 
 logger = logging.getLogger(__name__)

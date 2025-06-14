@@ -17,16 +17,16 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import networkx as nx
 
-from ethics_framework.core.constraints import (
+from src.ethics_framework.core.constraints import (
     EthicalConstraint, ConstraintType, ConstraintComposer,
     FairnessConstraint, PrivacyConstraint, TransparencyConstraint,
     ConsentConstraint, WellbeingConstraint
 )
-from ethics_framework.algorithms.constraint_composition import (
+from src.ethics_framework.algorithms.constraint_composition import (
     ConstraintGraph, OptimalCompositionFinder, ConflictResolver,
     DynamicCompositionManager
 )
-from ethics_framework.simulation.workload_generator import WorkloadGenerator, WorkloadConfig
+from src.ethics_framework.simulation.workload_generator import WorkloadGenerator, WorkloadConfig
 from experiments.baseline_comparison import EthicsAwareMLSystem
 
 logger = logging.getLogger(__name__)

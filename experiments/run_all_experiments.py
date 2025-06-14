@@ -18,16 +18,16 @@ import random
 # Add project root to path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from ethics_framework.core.interfaces import Decision
-from ethics_framework.core.constraints import (
+from src.ethics_framework.core.interfaces import Decision
+from src.ethics_framework.core.constraints import (
     FairnessConstraint, PrivacyConstraint, WellbeingConstraint,
     TransparencyConstraint, ConsentConstraint, ConstraintComposer
 )
-from ethics_framework.algorithms.ml_models import (
+from src.ethics_framework.algorithms.ml_models import (
     CollaborativeFilteringModel, HiringRecommendationModel,
     SocialMediaRankingModel, ContentClassificationModel
 )
-from ethics_framework.simulation.data_generator import DecisionGenerator
+from src.ethics_framework.simulation.data_generator import DecisionGenerator
 
 
 class MasterExperimentRunner:

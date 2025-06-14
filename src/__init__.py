@@ -3,8 +3,7 @@ Ethics-by-Design Framework - Core Package
 Sophisticated 5-layer architecture for ethical AI systems
 """
 
-from .layers import *
-from .experiments import *
+from .ethics_framework import *
 
 __version__ = "1.0.0"
 __author__ = "Ethics-by-Design Research Team"

@@ -13,19 +13,19 @@ from tqdm import tqdm
 import json
 from pathlib import Path
 
-from ethics_framework.core.constraints import (
+from src.ethics_framework.core.constraints import (
     FairnessConstraint, PrivacyConstraint, TransparencyConstraint,
     ConsentConstraint, WellbeingConstraint
 )
-from ethics_framework.core.layers import (
+from src.ethics_framework.core.layers import (
     Layer1_EthicalAIServices, Layer2_PrivacyPreserving,
     Layer3_ExplainabilityTransparency, Layer4_BiasDetectionMitigation,
     Layer5_AdaptiveGovernance
 )
-from ethics_framework.core.interfaces import Decision, SystemOrchestrator
-from ethics_framework.simulation.workload_generator import WorkloadGenerator, WorkloadConfig
-from ethics_framework.analysis.statistical_analysis import StatisticalAnalyzer
-from ethics_framework.visualization.latency_plots import plot_latency_distributions
+from src.ethics_framework.core.interfaces import Decision, SystemOrchestrator
+from src.ethics_framework.simulation.workload_generator import WorkloadGenerator, WorkloadConfig
+from src.ethics_framework.analysis.statistical_analysis import StatisticalAnalyzer
+from src.ethics_framework.visualization.latency_plots import plot_latency_distributions
 
 logger = logging.getLogger(__name__)
 

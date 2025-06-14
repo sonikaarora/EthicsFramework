@@ -12,8 +12,8 @@ import random
 import numpy as np
 from typing import Dict, Any, List
 
-from ethics_framework.core.system_orchestrator import EthicsFrameworkOrchestrator
-from ethics_framework.core.interfaces import Decision
+from src.ethics_framework.core.system_orchestrator import EthicsFrameworkOrchestrator
+from src.ethics_framework.core.interfaces import Decision
 
 
 def create_sample_decisions(num_decisions: int = 100) -> List[Decision]:

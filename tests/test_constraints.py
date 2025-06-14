@@ -12,12 +12,12 @@ from typing import Dict, List, Any
 from unittest.mock import Mock, patch
 
 # Import framework components
-from ethics_framework.core.constraints import (
+from src.ethics_framework.core.constraints import (
     FairnessConstraint, PrivacyConstraint, WellbeingConstraint,
     TransparencyConstraint, ConsentConstraint, ConstraintComposer
 )
-from ethics_framework.core.interfaces import Decision, ConstraintViolation
-from ethics_framework.algorithms.adaptive_optimizer import (
+from src.ethics_framework.core.interfaces import Decision, ConstraintViolation
+from src.ethics_framework.algorithms.adaptive_optimizer import (
     ConstraintThresholdOptimizer, OptimizationTarget
 )
 

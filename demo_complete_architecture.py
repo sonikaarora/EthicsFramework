@@ -15,8 +15,9 @@ Run this to see the complete system in action!
 
 import time
 import random
-from ethics_framework.core.system_orchestrator import EthicsFrameworkOrchestrator
-from ethics_framework.core.interfaces import Decision
+from typing import Dict, List, Any
+from src.ethics_framework.core.system_orchestrator import EthicsFrameworkOrchestrator
+from src.ethics_framework.core.interfaces import Decision
 
 def print_banner(title):
     """Print a nice banner for demo sections"""

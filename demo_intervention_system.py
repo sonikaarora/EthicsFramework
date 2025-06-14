@@ -18,8 +18,8 @@ from typing import Dict, Any, List
 # Add the project root to Python path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from ethics_framework.core.system_orchestrator import EthicsFrameworkOrchestrator
-from ethics_framework.core.interfaces import Decision
+from src.ethics_framework.core.system_orchestrator import EthicsFrameworkOrchestrator
+from src.ethics_framework.core.interfaces import Decision
 
 
 def create_demo_scenarios() -> List[Dict[str, Any]]:
