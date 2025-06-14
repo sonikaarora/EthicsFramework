@@ -234,9 +234,9 @@ class MyCustomAlgorithm(BaseAlgorithm):
 ## 📚 Documentation
 
 - **[Complete Architecture Guide](ARCHITECTURE_DOCUMENTATION.md)** - Detailed explanation for beginners
-- **[API Reference](docs/api_reference.md)** - Complete API documentation
-- **[Algorithm Integration Guide](docs/algorithm_integration.md)** - How to add new algorithms
-- **[Deployment Guide](docs/deployment.md)** - Production deployment instructions
+- **[Academic Paper Results](ACADEMIC_PAPER_RESULTS.md)** - Comprehensive experimental evaluation
+- **[Key Metrics Summary](PAPER_KEY_METRICS.md)** - Citation-ready statistics and findings
+- **[Integration Summary](INTERVENTION_INTEGRATION_SUMMARY.md)** - System integration details
 
 ## 🧪 Testing
 
@@ -315,7 +315,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Documentation**: [Full documentation](docs/)
+- **Architecture Guide**: [ARCHITECTURE_DOCUMENTATION.md](ARCHITECTURE_DOCUMENTATION.md)
+- **Paper Results**: [ACADEMIC_PAPER_RESULTS.md](ACADEMIC_PAPER_RESULTS.md)
+- **Key Metrics**: [PAPER_KEY_METRICS.md](PAPER_KEY_METRICS.md)
 - **Issues**: [GitHub Issues](https://github.com/sonikaarora/Ethics-by-Design/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/sonikaarora/Ethics-by-Design/discussions)
 
