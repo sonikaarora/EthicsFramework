@@ -2,6 +2,24 @@
 
 A comprehensive, production-ready framework for building ethical AI systems with built-in fairness, privacy, transparency, and safety guarantees.
 
+## 📖 Citation
+
+**If you use this framework in your research or production systems, please cite our paper:**
+
+```bibtex
+@inproceedings{arora2025ethics,
+  title={Ethics-by-Design Framework for Ethical AI Systems},
+  author={Arora, Sonika},
+  booktitle={Proceedings of the IEEE International Conference on Edge Computing},
+  year={2025},
+  doi={10.1109/EdgeCom66327.2025.00019}
+}
+```
+
+**DOI**: [10.1109/EdgeCom66327.2025.00019](https://doi.org/10.1109/EdgeCom66327.2025.00019)
+
+> 📝 **Academic Use**: This framework has been peer-reviewed and published. Please ensure proper attribution when using it in academic work, commercial applications, or derivative projects.
+
 ## 🎯 What is This Framework?
 
 The Ethics-by-Design Framework is a **5-layer architecture** that ensures every AI decision is ethical, fair, and transparent. Think of it as a smart guardian that watches over your AI systems and makes sure they do the right thing.
@@ -307,11 +325,14 @@ mypy ethics_framework/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+**Note**: While the code is open-source under MIT License, if you use this framework in academic research, please cite the associated paper (DOI: 10.1109/EdgeCom66327.2025.00019) as required by academic standards.
+
 ## 🙏 Acknowledgments
 
 - Built with ethical AI principles from leading research institutions
 - Inspired by fairness-aware machine learning best practices
 - Designed for real-world production deployment
+- **Published Research**: This framework is based on peer-reviewed research published at IEEE International Conference on Edge Computing (DOI: [10.1109/EdgeCom66327.2025.00019](https://doi.org/10.1109/EdgeCom66327.2025.00019))
 
 ## 📞 Support
 
