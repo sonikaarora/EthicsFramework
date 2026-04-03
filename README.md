@@ -335,7 +335,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Published Research**: This framework is based on peer-reviewed research published at IEEE International Conference on Edge Computing (DOI: [10.1109/EdgeCom66327.2025.00019](https://doi.org/10.1109/EdgeCom66327.2025.00019))
 
 
-## DOI: 10.1109/EdgeCom66327.2025.00019
+## DOI: [10.1109/EdgeCom66327.2025.00019](https://ieeexplore.ieee.org/document/11344344)
 
 ## 📞 Support
 
